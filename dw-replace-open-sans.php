@@ -14,8 +14,6 @@ function devework_replace_open_sans() {
 	wp_deregister_style('open-sans');
 	wp_register_style( 'open-sans', '//fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600' );
 	wp_enqueue_style( 'open-sans');
-		wp_register_style( 'open-sans-css', '//fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600' );
-	wp_enqueue_style( 'open-sans-css');
 }
 //前台加载，看需要注释之；
 add_action( 'wp_enqueue_scripts', 'devework_replace_open_sans' );
